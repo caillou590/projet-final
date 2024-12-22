@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="cart-container">
+    <h1>Votre Panier</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Produit</th>
+          <th>Quantité</th>
+          <th>Sous-total</th>
+        </tr>
+      </thead>
+      <tbody id="cart-items">
+        <!-- Ligne 1 -->
+        <tr>
+          <td>
+            <div class="cart-item">
+              <img src="buy-1.jpg" alt="Produit 1" width="50">
+              <p>Red Printed T-shirt</p>
+              <span>Prix: $50</span>
+            </div>
+          </td>
+          <td>
+            <button class="btn-minus">-</button>
+            <span class="quantity">1</span>
+            <button class="btn-plus">+</button>
+          </td>
+          <td class="subtotal">$50.00</td>
+        </tr>
+        <!-- Ligne 2 -->
+        <tr>
+          <td>
+            <div class="cart-item">
+              <img src="product-8.jpg" alt="Produit 2" width="50">
+              <p>Blue Printed T-shirt</p>
+              <span>Prix: $50</span>
+            </div>
+          </td>
+          <td>
+            <button class="btn-minus">-</button>
+            <span class="quantity">1</span>
+            <button class="btn-plus">+</button>
+          </td>
+          <td class="subtotal">$50.00</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="cart-total">
+      <h3>Total Commande: <span id="total-price">$100.00</span></h3>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>
